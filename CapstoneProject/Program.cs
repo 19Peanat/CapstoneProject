@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace CapstoneProject
 {
-    // **************************************************
+    // **********************************************************************************************************
     //
     // Title: CapStoneProject 
-    // Description: This is an application that makes trivia questions into a game programm.
+    // Description: This is an application that makes trivia questions into a game program to past time at 2 am.
     // Application Type: Console
     // Author: Pearl, Natham
     // Dated Created: 4/24/2020
     // Last Modified: 4/25/2020
     //
-    // **************************************************
+    // ************************************************************************************************************
 
 
 
@@ -58,8 +58,8 @@ namespace CapstoneProject
             do
             {
                 DisplayScreenHeader("Main Screen");
-                Console.WriteLine("\ta) Trivia Game ");
-                Console.WriteLine("\tb) ");
+                Console.WriteLine("\ta) Trivia Game:");
+                Console.WriteLine("\tb) Total Score:");
                 Console.WriteLine("\tc) ");
                 Console.WriteLine("\td) ");
                 Console.WriteLine("\te) ");
@@ -75,7 +75,7 @@ namespace CapstoneProject
                         break;
 
                     case "b":
-
+                        DisplayTotalScore();
                         break;
 
 
@@ -235,10 +235,10 @@ namespace CapstoneProject
 
         }
 
-        static double DisplayFunFactsFor500()
+        static void DisplayFunFactsFor500()
         {
             string userResponse;
-            List<int> Score = new List<int>();
+            List<double> Score = new List<double>();
             do
             {
                 Console.WriteLine("How long does it take the average person to fall asleep:");
@@ -258,21 +258,28 @@ namespace CapstoneProject
                     Console.WriteLine("Incorrect");
                 }
 
-            } while (true);
 
+            } while (false);
            
+
+            DisplayContinuePrompt();
+
+
 
         }
 
         static void DisplayFunFactsFor400()
         {
             string userResponse;
-            List<int> Score = new List<int>();
+
+
+            List<double> Score = new List<double>();
             do
             {
                 Console.WriteLine("Which state could produce enough wheat in 1 year for the entire worlf for two weeks.");
                 userResponse = Console.ReadLine();
-                if (userResponse.ToLower() == "Kansas")
+                userResponse.ToLower();
+                if (userResponse == "kansas")
                 {
                     Console.WriteLine("That Is the correct answer:");
                     Score.Add(400);
@@ -282,45 +289,54 @@ namespace CapstoneProject
                     Console.WriteLine("Incorrect");
                 }
 
-            } while (true);
 
-            
+            } while (false);
+
+           
+
+            DisplayContinuePrompt();
+
+
 
         }
 
         static void DisplayFunFactsFor300()
         {
             string userResponse;
-            List<int> Score = new List<int>();
+            List<double> Score = new List<double>();
             do
             {
                 Console.WriteLine("What two state do not observe daylight savings time.");
                 userResponse = Console.ReadLine();
-                if (userResponse.ToLower() == "Arizona and Hawaii")
+                if (userResponse.ToLower() == "arizona and hawaii")
                 {
                     Console.WriteLine("That Is the correct answer:");
                     Score.Add(300);
                 }
+
                 else
                 {
-                    Console.WriteLine("That is the worng answer:");
+                    Console.WriteLine("Incorrect");
                 }
 
-            } while (true);
+            } while (false);
+            
 
-           
+            DisplayContinuePrompt();
+
+
 
         }
 
         static void DisplayFunFactsFor200()
         {
             string userResponse;
-            List<int> Score = new List<int>();
+            List<double> Score = new List<double>();
             do
             {
                 Console.WriteLine("Which Country soled Alaska to the United States for 2 cents per acre:");
                 userResponse = Console.ReadLine();
-                if (userResponse.ToLower() == "Russia")
+                if (userResponse.ToLower() == "russia")
                 {
                     Console.WriteLine("That Is the correct answer:");
                     Score.Add(200);
@@ -330,33 +346,38 @@ namespace CapstoneProject
                     Console.WriteLine("Incorrect");
                 }
 
-            } while (true);
 
-         
+            } while (false);
+           
+
+            DisplayContinuePrompt();
+
 
         }
 
-        static double DisplayFunFactsFor100()
+        static void DisplayFunFactsFor100()
         {
             string userResponse;
-            List<int> Score = new List<int>();
+            List<double> Score = new List<double>();
             do
             {
                 Console.WriteLine("What is the official launguage of the United States:");
                 userResponse = Console.ReadLine();
-                if (userResponse.ToLower() == "No Offical Launguage")
+                if (userResponse.ToLower() == "no Offical launguage")
                 {
                     Console.WriteLine("That Is the correct answer:");
                     Score.Add(100);
                 }
                 else
                 {
-                    Console.WriteLine("That is incorrect the corect answer is no offical launguage.");
+                    Console.WriteLine("Incorrect");
                 }
 
-            } while (true);
-
+            } while (false);
             
+
+            DisplayContinuePrompt();
+
 
         }
 
@@ -435,12 +456,12 @@ namespace CapstoneProject
         static void DisplaySportsLegendsFor500()
         {
             string userResponse;
-            List<int> Score = new List<int>();
+            List<double> Score = new List<double>();
             do
             {
                 Console.WriteLine("Which NBA player has the most championships Rings:");
                 userResponse = Console.ReadLine();
-                if (userResponse.ToLower() == "Bill Russell")
+                if (userResponse.ToLower() == "bill russell")
                 {
                     Console.WriteLine("That Is the correct answer:");
                     Score.Add(500);
@@ -450,39 +471,46 @@ namespace CapstoneProject
                     Console.WriteLine("Incorrect");
                 }
 
-            } while (true);
 
-          
+            } while (false);
+            
+
+            DisplayContinuePrompt();
+
         }
 
         static void DisplaySportsLegendsFor400()
         {
             string userResponse;
-            List<int> Score = new List<int>();
+            List<double> Score = new List<double>();
             do
             {
                 Console.WriteLine("Who is the Logo for the NBA based on: ");
                 userResponse = Console.ReadLine();
-                if (userResponse.ToLower() == "Jerry West")
+                if (userResponse.ToLower() == "jerry west")
                 {
                     Console.WriteLine("That Is the correct answer:");
                     Score.Add(400);
                 }
+
                 else
                 {
                     Console.WriteLine("Incorrect");
                 }
 
-            } while (true);
 
-         
+            } while (false);
+            
+
+            DisplayContinuePrompt();
+
 
         }
 
         static void DisplaySportsLegendsFor300()
         {
             string userResponse;
-            List<int> Score = new List<int>();
+            List<double> Score = new List<double>();
             do
             {
                 Console.WriteLine("In what year was the first football game played:  ");
@@ -492,24 +520,28 @@ namespace CapstoneProject
                     Console.WriteLine("That Is the correct answer:");
                     Score.Add(300);
                 }
+
                 else
                 {
                     Console.WriteLine("Incorrect");
                 }
 
-            } while (true);
+            } while (false);
+           
+
+            DisplayContinuePrompt();
 
         }
 
         static void DisplaySportsLegendsFor200()
         {
             string userResponse;
-            List<int> Score = new List<int>();
+            List<double> Score = new List<double>();
             do
             {
                 Console.WriteLine("What is the state sport of Alabama: ");
                 userResponse = Console.ReadLine();
-                if (userResponse.ToLower() == "Figure skating")
+                if (userResponse.ToLower() == "figure skating")
                 {
                     Console.WriteLine("That Is the correct answer:");
                     Score.Add(200);
@@ -519,7 +551,11 @@ namespace CapstoneProject
                     Console.WriteLine("Incorrect");
                 }
 
-            } while (true);
+
+            } while (false);
+            
+
+            DisplayContinuePrompt();
 
 
 
@@ -528,24 +564,28 @@ namespace CapstoneProject
         static void DisplaySportsLegendsFor100()
         {
             string userResponse;
-            List<int> Score = new List<int>();
+            List<double> Score = new List<double>();
             do
             {
                 Console.WriteLine("In the NBA which hall of famer was known as the [round bound on the rebound]:");
                 userResponse = Console.ReadLine();
-                if (userResponse.ToLower() == "Charles Barkley")
+                if (userResponse.ToLower() == "charles barkley")
                 {
                     Console.WriteLine("That Is the correct answer:");
                     Score.Add(100);
                 }
+
                 else
                 {
                     Console.WriteLine("Incorrect");
                 }
 
-            } while (true);
+            } while (false);
+          
 
-           
+            DisplayContinuePrompt();
+
+
 
         }
 
@@ -577,6 +617,8 @@ namespace CapstoneProject
                 Console.WriteLine("________________|");
                 Console.WriteLine("\te) 500        |");
                 Console.WriteLine("________________| ");
+                Console.WriteLine("\tf  total score|");
+                Console.WriteLine("________________| ");
                 Console.WriteLine("\tq) Main Menu");
                 Console.Write("\t\tEnter Choice:");
                 menuChoice = Console.ReadLine().ToLower();
@@ -605,7 +647,9 @@ namespace CapstoneProject
                     case "e":
                         DisplayMusicFor500();
                         break;
-
+                    case "f":
+                        DisplayTotalScore();
+                        break;
                     case "q":
                         quittMusicMenu = true;
                         break;
@@ -626,12 +670,12 @@ namespace CapstoneProject
         static void DisplayMusicFor100()
         {
             string userResponse;
-            List<int> Score = new List<int>();
+            List<double> Score = new List<double>();
             do
             {
-                Console.WriteLine("Do Musicians have shorter life spans that the general populations:");
+                Console.WriteLine("Do Musicians have shorter life spans than the general populations:");
                 userResponse = Console.ReadLine();
-                if (userResponse.ToLower() == "Yes")
+                if (userResponse.ToLower() == "yes")
                 {
                     Console.WriteLine("That Is the correct answer:");
                     Score.Add(100);
@@ -641,22 +685,23 @@ namespace CapstoneProject
                     Console.WriteLine("Incorrect");
                 }
 
-            } while (true);
 
-           
+            } while (false);
+            
+            DisplayContinuePrompt();
 
         }
 
         static void DisplayMusicFor200()
         {
             string userResponse;
-            List<int> Score = new List<int>();
+            List<double> Score = new List<double>();
 
             do
             {
                 Console.WriteLine("Who hosted the largest ever free concet in 1993:");
                 userResponse = Console.ReadLine();
-                if (userResponse.ToLower() == "Rod Stewart")
+                if (userResponse.ToLower() == "rod stewart")
                 {
                     Console.WriteLine("That Is the correct answer:");
                     Score.Add(200);
@@ -666,45 +711,48 @@ namespace CapstoneProject
                     Console.WriteLine("Incorrect");
                 }
 
-            } while (true);
-
+            } while (false);
             
+
+            DisplayContinuePrompt();
+
 
         }
 
         static void DisplayMusicFor300()
         {
             string userResponse;
-            List<int> Score = new List<int>();
+            List<double> Score = new List<double>();
             do
             {
                 Console.WriteLine("What Navy uses Britney Spears songs to scare off pirates:");
                 userResponse = Console.ReadLine();
-                if (userResponse.ToLower() == "British")
+                if (userResponse.ToLower() == "british")
                 {
                     Console.WriteLine("That Is the correct answer:");
                     Score.Add(300);
                 }
+
                 else
                 {
                     Console.WriteLine("Incorrect");
                 }
 
-            } while (true);
-
+            } while (false);
             
 
+            DisplayContinuePrompt();
         }
 
         static void DisplayMusicFor400()
         {
             string userResponse;
-            List<int> Score = new List<int>();
+            List<double> Score = new List<double>();
             do
             {
                 Console.WriteLine("Which country conducted a study that proves plants grow faster:");
                 userResponse = Console.ReadLine();
-                if (userResponse.ToLower() == "South Korea")
+                if (userResponse.ToLower() == "south korea")
                 {
                     Console.WriteLine("That Is the correct answer:");
                     Score.Add(400);
@@ -714,9 +762,11 @@ namespace CapstoneProject
                     Console.WriteLine("Incorrect");
                 }
 
-            } while (true);
 
-           
+            } while (false);
+            
+
+            DisplayContinuePrompt();
 
 
         }
@@ -724,12 +774,12 @@ namespace CapstoneProject
         static void DisplayMusicFor500()
         {
             string userResponse;
-            List<int> Score = new List<int>();
+            List<double> Score = new List<double>();
             do
             {
                 Console.WriteLine("Which famous Band could read or write music:");
                 userResponse = Console.ReadLine();
-                if (userResponse.ToLower() == "The Beatles")
+                if (userResponse.ToLower() == "the beatles")
                 {
                     Console.WriteLine("That Is the correct answer:");
                     Score.Add(500);
@@ -739,9 +789,11 @@ namespace CapstoneProject
                     Console.WriteLine("Incorrect");
                 }
 
-            } while (true);
+            } while (false);
+          
 
-           
+            DisplayContinuePrompt();
+
 
 
         }
@@ -749,9 +801,9 @@ namespace CapstoneProject
 
         static void DisplayTotalScore()
         {
-            List<int> Score = new List<int>();
+            List<double> Score = new List<double>();
             Console.WriteLine("_______________");
-            Console.WriteLine(Score.Sum(x => Convert.ToInt32(x)));
+            Console.WriteLine(Score.Sum(x => Convert.ToDouble(x)));
 
             DisplayContinuePrompt();
         }
