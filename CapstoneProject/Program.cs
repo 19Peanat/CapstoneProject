@@ -110,7 +110,7 @@ namespace CapstoneProject
 
             bool quitGameCatacoriesMenu = false;
             string menuChoice;
-            double totalScore = 0;
+            
 
             do
             {
@@ -260,7 +260,7 @@ namespace CapstoneProject
 
             } while (true);
 
-            DisplayContinuePrompt();
+           
 
         }
 
@@ -284,7 +284,7 @@ namespace CapstoneProject
 
             } while (true);
 
-            DisplayContinuePrompt();
+            
 
         }
 
@@ -308,7 +308,7 @@ namespace CapstoneProject
 
             } while (true);
 
-            DisplayContinuePrompt();
+           
 
         }
 
@@ -332,7 +332,7 @@ namespace CapstoneProject
 
             } while (true);
 
-            DisplayContinuePrompt();
+         
 
         }
 
@@ -356,7 +356,7 @@ namespace CapstoneProject
 
             } while (true);
 
-            DisplayContinuePrompt();
+            
 
         }
 
@@ -452,9 +452,7 @@ namespace CapstoneProject
 
             } while (true);
 
-            DisplayContinuePrompt();
-
-
+          
         }
 
         static void DisplaySportsLegendsFor400()
@@ -477,8 +475,7 @@ namespace CapstoneProject
 
             } while (true);
 
-            DisplayContinuePrompt();
-
+         
 
         }
 
@@ -502,9 +499,6 @@ namespace CapstoneProject
 
             } while (true);
 
-            DisplayContinuePrompt();
-
-
         }
 
         static void DisplaySportsLegendsFor200()
@@ -527,7 +521,6 @@ namespace CapstoneProject
 
             } while (true);
 
-            DisplayContinuePrompt();
 
 
         }
@@ -552,8 +545,7 @@ namespace CapstoneProject
 
             } while (true);
 
-            DisplayContinuePrompt();
-
+           
 
         }
 
@@ -626,7 +618,7 @@ namespace CapstoneProject
                 }
 
             } while (!quittMusicMenu);
-
+            DisplayContinuePrompt();
 
         }
 
@@ -651,8 +643,7 @@ namespace CapstoneProject
 
             } while (true);
 
-            DisplayContinuePrompt();
-
+           
 
         }
 
@@ -677,8 +668,7 @@ namespace CapstoneProject
 
             } while (true);
 
-            DisplayContinuePrompt();
-
+            
 
         }
 
@@ -702,8 +692,7 @@ namespace CapstoneProject
 
             } while (true);
 
-            DisplayContinuePrompt();
-
+            
 
         }
 
@@ -727,7 +716,7 @@ namespace CapstoneProject
 
             } while (true);
 
-            DisplayContinuePrompt();
+           
 
 
         }
@@ -752,7 +741,7 @@ namespace CapstoneProject
 
             } while (true);
 
-            DisplayContinuePrompt();
+           
 
 
         }
