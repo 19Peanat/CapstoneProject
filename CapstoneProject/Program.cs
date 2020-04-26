@@ -57,13 +57,10 @@ namespace CapstoneProject
             string menuChoice;
             do
             {
-                DisplayScreenHeader("Main Screen");
+                DisplayScreenHeader("Wanna Play");
                 Console.WriteLine("\ta) Trivia Game:");
                 Console.WriteLine("\tb) Total Score:");
-                Console.WriteLine("\tc) ");
-                Console.WriteLine("\td) ");
-                Console.WriteLine("\te) ");
-                Console.WriteLine("\tf) ");
+                
                 Console.WriteLine("\tq) Quit");
                 Console.Write("\t\tEnter Choice:");
                 menuChoice = Console.ReadLine().ToLower();
