@@ -91,7 +91,7 @@ namespace CapstoneProject
             } while (!quitApplication);
         }
 
-        #region trivia Game
+        #region Trivia Game
 
         /// <summary>
         /// *****************************************************************
