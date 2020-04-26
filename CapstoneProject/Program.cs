@@ -747,7 +747,7 @@ namespace CapstoneProject
             List<double> Score = new List<double>();
             do
             {
-                Console.WriteLine("Which country conducted a study that proves plants grow faster:");
+                Console.WriteLine("Which country conducted a study that proves plants grow faster when they listen to music:");
                 userResponse = Console.ReadLine();
                 if (userResponse.ToLower() == "south korea")
                 {
